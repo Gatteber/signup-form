@@ -36,26 +36,44 @@
         <div class="signup-form">
             <legend>Learn to travel now!</legend>
             <fieldset>
-            <form action="#" method="post">
-                <label for="firstName">First Name:</label>
-                <input type="text" name="first_name" id="firstName" placeholder="Indiana">
-                <label for="lastName">Last Name:</label>
-                <input type="text" name="last_name" id="lastName" placeholder="Jones">
-                <label for="userEmail">Email Address:</label>
-                <input type="email" name="user_email" id="userEmail" placeholder="I.Jones@Crystalskull.com">
-                <label for="userPhone">Phone Number:</label>
-                <input type="tel" name="phone_number" id="userPhone" placeholder="123-456-7890">
-                <label for="userPassword">Password:</label>
-                <input type="password" name="user_password" id="userPassword">
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" name="confirm_password" id="confirmPassword">
-            </form>
-        </fieldset>
+                <form action="#" method="post">
+                    <div class="name-field">
+                            <div class="first-name">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" name="first_name" id="firstName" placeholder="Indiana" required>
+                            </div>
+                            <div class="last-name">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" name="last_name" id="lastName" placeholder="Jones" required>
+                            </div>
+                        </div>
+                    <div class="number-field">
+                        <div class="email">
+                            <label for="userEmail">Email Address:</label>
+                            <input type="email" name="user_email" id="userEmail" placeholder="I.Jones@Crystalskull.com" required>
+                        </div>
+                        <div class="phone-number">
+                            <label for="userPhone">Phone Number:</label>
+                            <input type="tel" name="phone_number" id="userPhone" placeholder="123-456-7890" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Please enter a US phone number, following the 123-456-7890 format." required>
+                        </div>
+                    </div>
+                    <div class="pw-field">
+                        <div class="password">
+                            <label for="userPassword">Password:</label>
+                            <input type="password" name="user_password" id="userPassword" required>
+                        </div>
+                        <div class="confirm-password">
+                            <label for="confirmPassword" required>Confirm Password:</label>
+                            <input type="password" name="confirm_password" id="confirmPassword" required>
+                        </div>
+                    </div>
         </div>
         <div class="signup-footer">
             <div class="button">
-                <button class="ca-button">Create Account</button>
+                <button class="ca-button" type="submit">Create Account</button>
             </div>
+        </fieldset>
+    </form>
             <div class="login-reminder"><p class="login-text">Already have an account?<a href="#"> Log in</a>.</p></div>
         </div>
     </div>
