@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0 4rem 0 4rem;
   background-color: #2E3033;
+  display: flex;
 }
 
 a, p {
@@ -30,9 +31,9 @@ a:visited {
 }
 
 .sidebar-logo-box {
-  position: fixed;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  width: inherit;
+  width: 350px;
   height: 6rem;
   top: 25rem;
   display: flex;
@@ -55,4 +56,31 @@ a:visited {
 }
 .sidebar-footer .sidebar-footer-text {
   opacity: 70%;
+}
+
+.main-body {
+  background-color: #F8F0E3;
+  width: 50vh;
+  height: 90vh;
+}
+
+.cta {
+  padding-top: 5rem;
+}
+
+.cta > p {
+  color: #2E3033;
+}
+
+.login-text {
+  color: #2E3033;
+}
+
+.login-reminder > a {
+  color: #2E3033;
+}
+
+.ca-button {
+  background-color: #DB452E;
+  color: #FCFBF4;
 }/*# sourceMappingURL=style.css.map */

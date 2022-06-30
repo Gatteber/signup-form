@@ -1,10 +1,13 @@
 $baseColor: #2E3033;
 $textColor: #FCFBF4;
+$backgroundColor: #F8F0E3;
+$buttonSignup: #DB452E;
+
 body {
     margin: 0;
     padding: 0 4rem 0 4rem;
     background-color: $baseColor;
-
+    display: flex;
 }
 
 a, p {
@@ -35,9 +38,9 @@ a:visited {
 }
 
 .sidebar-logo-box {
-    position: fixed;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
-    width: inherit;
+    width: 350px;
     height: 6rem;
     top: 25rem;
     display: flex;
@@ -66,3 +69,31 @@ a:visited {
     }
 
 }
+
+.main-body {
+    background-color: $backgroundColor;
+    width: 50vh;
+    height: 90vh;
+}
+
+
+.cta {
+    padding-top: 5rem;
+}
+.cta>p {
+    color: $baseColor;
+}
+
+.login-text {
+    color: $baseColor;
+}
+
+.login-reminder>a {
+    color: $baseColor;
+}
+
+.ca-button {
+    background-color: $buttonSignup;
+    color: $textColor;
+}
+
