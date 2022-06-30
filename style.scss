@@ -1,0 +1,68 @@
+$baseColor: #2E3033;
+$textColor: #FCFBF4;
+body {
+    margin: 0;
+    padding: 0 4rem 0 4rem;
+    background-color: $baseColor;
+
+}
+
+a, p {
+    color: $textColor;
+}
+
+a:visited {
+    color: $textColor;
+
+}
+
+.sidebar {
+    width: 350px;
+    height: 900px;
+}
+
+.image-container {
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    overflow: hidden;
+
+    .sidebar-img {
+        position: absolute;
+        width: 60vh;
+        height: auto;
+    }
+}
+
+.sidebar-logo-box {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: 6rem;
+    top: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .textbox {
+        display: flex;
+    }
+
+    .sidebar-text {
+        font-size: 24px;
+        font-family: 'Rock Salt', cursive;
+    }
+
+}
+
+.sidebar-footer {
+    position: fixed;
+    left: 7rem;
+    bottom: 5rem;
+
+    .sidebar-footer-text {
+        opacity: 70%;
+    }
+
+}

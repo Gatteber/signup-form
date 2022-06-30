@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0 4rem 0 4rem;
+  background-color: #2E3033;
+}
+
+a, p {
+  color: #FCFBF4;
+}
+
+a:visited {
+  color: #FCFBF4;
+}
+
+.sidebar {
+  width: 350px;
+  height: 900px;
+}
+
+.image-container {
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  overflow: hidden;
+}
+.image-container .sidebar-img {
+  position: absolute;
+  width: 60vh;
+  height: auto;
+}
+
+.sidebar-logo-box {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: 6rem;
+  top: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.sidebar-logo-box .textbox {
+  display: flex;
+}
+.sidebar-logo-box .sidebar-text {
+  font-size: 24px;
+  font-family: "Rock Salt", cursive;
+}
+
+.sidebar-footer {
+  position: fixed;
+  left: 7rem;
+  bottom: 5rem;
+}
+.sidebar-footer .sidebar-footer-text {
+  opacity: 70%;
+}/*# sourceMappingURL=style.css.map */
