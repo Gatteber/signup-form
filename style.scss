@@ -5,7 +5,7 @@ $buttonSignup: #DB452E;
 
 body {
     margin: 0;
-    padding: 0 4rem 0 4rem;
+    padding: 0 1rem 0 1rem;
     background-color: $baseColor;
     display: flex;
 }
@@ -20,21 +20,44 @@ a:visited {
 }
 
 input {
-    background: white;
+    background-color: $textColor;
+    font-size: 1.2rem;
 }
 
-input:invalid:required {
-    border: 5px solid pink;
-    background: white;
+input:required {
+    background: $textColor;
+    border: 1px solid $baseColor;
+    border-radius: 3px;
 }
   
-input:invalid {
-    background: red;
+input:not(:placeholder-shown):invalid {
+    background: $textColor;
+    border: 1px solid red;
+    border-radius: 3px;
 }
   
   input:valid {
-    border-color:green;
+    background: $textColor;
+    border: 1px solid green;
+    border-radius: 3px;
 }
+
+input:focus {
+    background: $textColor;
+    box-shadow: 1px 1px 10px $baseColor;
+}
+
+fieldset {
+    border: none;
+    background-color: $textColor;
+}
+
+legend {
+    padding-left: 0.8rem;
+    font-size: 1.5rem;
+}
+
+
 
 
 .sidebar {
@@ -60,7 +83,7 @@ input:invalid {
     background-color: rgba(0, 0, 0, 0.5);
     width: 350px;
     height: 6rem;
-    top: 25rem;
+    top: 22rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +102,7 @@ input:invalid {
 
 .sidebar-footer {
     position: fixed;
-    left: 7rem;
+    left: 5rem;
     bottom: 5rem;
 
     .sidebar-footer-text {
@@ -90,16 +113,24 @@ input:invalid {
 
 .main-body {
     background-color: $backgroundColor;
-    width: 50vh;
+    width: 100vh;
     height: 90vh;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 
 .cta {
     padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    padding-left: 0.8rem;
 }
 .cta>p {
     color: $baseColor;
+}
+
+.signup-form {
+    box-shadow: 0px 2px 4px $baseColor;
 }
 
 .name-field {
@@ -107,11 +138,13 @@ input:invalid {
     gap: 1.5rem;
     align-items: center;
     margin-bottom: 0.5rem;
+    justify-content: center;
   }
   
   .first-name, .last-name, .email, .phone-number, .password, .confirm-password {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
   
   .number-field {
@@ -119,6 +152,7 @@ input:invalid {
     gap: 1.5rem;
     align-items: center;
     margin-bottom: 0.5rem;
+    justify-content: center;
   }
   
   .pw-field {
@@ -126,14 +160,33 @@ input:invalid {
     gap: 1.5rem;
     align-items: center;
     margin-bottom: 0.5rem;
+    justify-content: center;
   }
   
-  .login-text, .login-text > a {
+  .login-text {
     color: #2E3033;
+    padding-left: 0.8rem;
+
+        
+    a {
+        color: $buttonSignup;
+        text-decoration: none;
+
+    }
   }
+  
+
 
 .ca-button {
     background-color: $buttonSignup;
     color: $textColor;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    decoration: none;
+    border: 1px solid $baseColor;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px grey;
 }
 
